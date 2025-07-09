@@ -1,0 +1,153 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* position -> relative, absolute, static, fixed, sticky */
+/* top , bottom, left, right */
+/* postion: relative -> relative to its normal position */
+.relative{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* left: 100px; */
+    right: -100px;
+}
+/* postion: absolute -> relative to its parent */
+.absolute{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    top: 100px;
+    right: 10px;
+}
+/* fixed: relative to the viewport -> screen ko size */
+.fixed{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(13, 0, 128);
+    top: 100px;
+    right: 10px;
+}
+.full{
+    height: 200vh;
+    background-color: yellowgreen;
+}
+.static{
+    position: static;
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+}
+.sticky{
+    position: sticky;
+   top: 0px;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
+.sticky1{
+    position: sticky;
+   bottom: 0px;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
+/*  display :->
+    1. block
+    2. inline
+    3. inline-block
+    4. none
+    5. visibility: hidden
+*/
+/* 
+    block -> width, height
+    inline -> width, height cannot be set
+*/
+/* h1{
+    background-color: red;
+    height: 100px;
+    display: inline;
+}
+a{
+    background-color: grey;
+    height: 100px;
+    display: block;
+} */
+ /* h1{
+    background-color: red;
+    height: 100px;
+    display: inline-block;
+} */
+/* h1{
+    background-color: red;
+    height: 100px;
+    display: none;
+} */
+ h1{
+    background-color: red;
+    height: 100px;
+    visibility: hidden;
+}
+a{
+    background-color: grey;
+    height: 100px;
+    display: inline-block;
+}
+.relativs{
+    position: relative;
+    border: 1px solid black;
+}
+.imgs{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    z-index: -1;
+}
+.flex-parent{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    
+    align-items: center; 
+    align-items: start; 
+    align-items: end; 
+    /* y -> center */
+    justify-content: center;
+    justify-content: start;
+    justify-content: end;
+    justify-content: space-around;
+    /* middle ma dherai space side ma ali kaam */
+    justify-content: space-between;
+    /* only in middle space */
+    justify-content: space-evenly;
+    /* space space between children */
+    /*  x-> center */
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.child{
+    height: 550px;
+    width: 600px;
+    border: 1px solid black;
+    margin: 10px;
+
+}
+.child1{
+    background-color: red;
+}
+.child2{
+    background-color: green;
+}
+.child3{
+    background-color: yellow;
+}
+.child4{
+    background-color: black;
+}

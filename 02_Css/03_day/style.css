@@ -1,0 +1,65 @@
+/* p{
+    border: 2px solid red;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 150px;
+    overflow: auto;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: visible;
+    overflow : auto;
+    scrollbar-width: thin;
+    scrollbar-color: red blue;
+}
+img{
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+img{
+    float: right;
+    height: 100px;
+    width: 100px;
+} */
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    width: 70vw;
+    margin: 0 auto;
+}
+.card{
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+/* child selector (space) */
+.card img{
+    width: 400px;
+}
+.card1{
+    float: inline-start;
+}
+.card2{
+    float: right;
+}
+.card3{
+    float: inline-end;
+}
+/* backgorund - image */
+.backgrounds{
+    height: 200vh;
+    background-image: url("https://images.unsplash.com/photo-1750861393222-b9cd68ae5f51?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-position: top center;
+    background-position: top left;
+    background-position: top right;
+    background-position: center center;
+    background-attachment: scroll ;
+    background-attachment: fixed ;
+    background-size: cover;
+    background-size: contain;
+}

@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box1{
+    background-color: green;
+    height: 100px;
+}
+.box1::after{
+        content: "Desktop";
+    }
+.box2{
+    background-color: purple;
+    height: 100px;
+}
+
+/* @media (max-width : 500px) {
+    .box1{
+        background-color: red;
+    }
+    .box1::after{
+        content: "mobile";
+    }
+} */
+
+@media (min-width : 500px) {
+    .box2{
+        background-color: yellow;
+    }
+}
+
+
+/* @media (orientation: landscape) {
+    .box1{
+        background-color: black;
+    }
+} */
+
+/* @media (min-width: 500px) and (max-width: 1000px) {
+    .box1{
+        background-color: rgb(98, 98, 97);
+    }
+    .box1::after{
+        content: "tablet view";
+    }
+} */
+@media (500px <= width <= 1000px){
+    .box1{
+        background-color: rgb(98, 98, 97);
+    }
+    .box1::after{
+        content: "tablet view";
+    }
+}
+
+@media (500px >= width){
+    .box1{
+        background-color: red;
+    }
+    .box1::after{
+        content: "mobile";
+    }
+}

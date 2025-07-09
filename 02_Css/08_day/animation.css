@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.child{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    /* animation : animation-name animation-duration animation-timing-function animation-delay */
+    animation-name: shishir;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+/* @keyframes shishir {
+    from {
+        top:0px;
+        left: 0px;
+    }to{
+        top: 500px;
+        left: 500px;
+    }
+    
+} */
+
+@keyframes shishir {
+    0%, 100% {
+        top:0px;
+    }   
+    50%{
+        top: 90vh;
+    }
+    
+}

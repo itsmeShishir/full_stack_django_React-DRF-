@@ -1,0 +1,67 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.child-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.child{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+}
+.child1{
+    
+   flex: 1;
+    background-color: yellow;
+}
+.child2{
+    flex: 3;
+}
+.child3{
+    flex: 1 1 200px;
+    background-color: yellow;
+}
+.child5{
+    background-color: yellow;
+} */
+/* grid layouts  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.child-parent{
+    display: grid;
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    /* justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly; */ 
+    /* things that doesnot work */
+   align-items: start;
+   align-items: end;
+   align-items: center;
+   gap: 50px;
+
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    height: 100vh;
+    background-color: green;
+}
+.child{
+    height: 400px;
+    background-color: yellow;
+}
+.child2{
+    background-color: red;
+}
+.child4{
+    background-color: red;
+}

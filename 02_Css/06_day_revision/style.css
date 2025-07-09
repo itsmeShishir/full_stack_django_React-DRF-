@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --red: red;
+}
+p{
+    color: red;
+}
+/* color = property */
+/* red = value */
+/* p = selector */
+.btn{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid red;
+    margin: 20px;
+    outline-width: 10px;
+    outline-color: rgb(0, 0, 0);
+    outline-style: solid;
+}
+.btn:hover{
+    background-color: yellow;
+    color: black;
+}
+p{
+    border: 1px solid green;
+    display: flow-root;
+}
+img{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+/* pseudo class 
+    :link
+    :visited
+    :hover
+    :active
+*/
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+a:active{
+    color: rgb(0, 13, 128);
+}
+/* pseudo element */
+/* 
+    ::before
+    ::after
+
+*/
+a::after{
+    content: "->";
+    color: red;
+}
+
+a::before{
+    content: "<-💁🏼";
+    color: red;
+}
+/* Measurement unit  */
+/* 
+px, em, rem, vh, vw, %
+relative -> %, vh, vw
+absolute -> px, em , rem
+16px  = 1em, 1rem
+*/
+/* px -> pixel -> 1px  = 1px 
+(mobile view <= 568px, 
+tablet view <= 768px, 
+desktop view <= 1200px, 
+large screen) 
+*/
+/* vh , % , vw */
+.box1{
+    width: 20em;
+    background-color: var(--red);
+    height: 100px;
+}
+.box2{
+    height: calc(100vh - 320px);
+    background-color: yellow;
+}
